@@ -1,76 +1,11 @@
-*foreground:        #dad5b9
-*background:        #0D363F
-*.foreground:       #dad5b9
-*.background:       #0D363F
-emacs*foreground:   #dad5b9
-emacs*background:   #0D363F
-URxvt*foreground:   #dad5b9
-XTerm*foreground:   #dad5b9
-UXTerm*foreground:  #dad5b9
-URxvt*background:   [90]#0D363F
-XTerm*background:   #0D363F
-UXTerm*background:  #0D363F
-URxvt*cursorColor:  #dad5b9
-XTerm*cursorColor:  #dad5b9
-UXTerm*cursorColor: #dad5b9
-URxvt*borderColor:  [90]#0D363F
+Xft.dpi: 96 
+*dpi: 96
 
-*.color0: #0D363F
-*color0:  #0D363F
-*.color1: #9FA073
-*color1:  #9FA073
-*.color2: #AFAA78
-*color2:  #AFAA78
-*.color3: #D1BD7B
-*color3:  #D1BD7B
-*.color4: #13788B
-*color4:  #13788B
-*.color5: #199BB2
-*color5:  #199BB2
-*.color6: #59A9A7
-*color6:  #59A9A7
-*.color7: #dad5b9
-*color7:  #dad5b9
-*.color8: #989581
-*color8:  #989581
-*.color9: #9FA073
-*color9:  #9FA073
-*.color10: #AFAA78
-*color10:  #AFAA78
-*.color11: #D1BD7B
-*color11:  #D1BD7B
-*.color12: #13788B
-*color12:  #13788B
-*.color13: #199BB2
-*color13:  #199BB2
-*.color14: #59A9A7
-*color14:  #59A9A7
-*.color15: #dad5b9
-*color15:  #dad5b9
-
-*.color66: #0D363F
-*color66:  #0D363F
-
-XClock*foreground: #dad5b9
-XClock*background: #0D363F
-XClock*majorColor:  rgba:da/d5/b9/ff
-XClock*minorColor:  rgba:da/d5/b9/ff
-XClock*hourColor:   rgba:da/d5/b9/ff
-XClock*minuteColor: rgba:da/d5/b9/ff
-XClock*secondColor: rgba:da/d5/b9/ff
-
-URxvt*depth: 32
-
-!-----------------------------------------------------------
-
-URxvt*font:             xft:Hack:size=12
-URxvt*termName:         rxvt-256color
-URxvt*scrollBar:        false
-URxvt*perl-lib:         /usr/lib/urxvt/perl/
-URxvt*perl-ext-common:  default,matcher
-URxvt*urlLauncher:      /usr/bin/jumanji
-URxvt*matcher.button:   1
-URxvt.internalBorder:   35
-
-XTerm*bellIsUrgent: True
+URxvt.background: [80]#0D363F
+URxvt.foreground: #DAD5B9
+URxvt.font: xft:Hack:size=12,xft:FontAwesome:size=12
+URxvt.scrollBar: false
 URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt.internalBorder: 15
+URxvt.depth: 32
