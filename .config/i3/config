@@ -103,16 +103,17 @@ set $ws9 "9"
 set $ws10 "10"
 
 # i3bar
-bar {
-    status_command i3status
-    position top
-}
+#bar {
+#    status_command i3status
+#    position top
+#}
 
 # i3gaps
 gaps inner 15
 gaps outer 0
 
 smart_gaps on
+smart_borders on
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -152,7 +153,16 @@ mode "$mode_gaps_outer" {
 }
 
 # window border
-new_window pixel 2
+new_window pixel 4
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
 
 # custom keybinds 
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -162,6 +172,7 @@ bindsym $mod+Mod1+F11 exec compton -b
 bindsym $mod+Mod1+F12 exec pkill compton
 
 # autostart
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id "~/.fehbg"
 exec --no-startup-id "xrandr --dpi 96"
 exec --no-startup-id "udiskie"
